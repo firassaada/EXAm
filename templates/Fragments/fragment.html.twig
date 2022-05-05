@@ -1,0 +1,16 @@
+
+{% for cle in app.session.flashbag.get('success') %}
+    <div class="alert alert-success">
+        {{cle}}
+    </div>
+{% endfor %}
+{% for cle in app.session.flashbag.get('danger') %}
+    <div class="alert alert-danger">
+        {{cle}}
+    </div>
+{% endfor %}
+{% for cle in app.session.flashbag.get('error') %}
+    <div class="alert alert-info">
+        {{cle}}
+    </div>
+{% endfor %}

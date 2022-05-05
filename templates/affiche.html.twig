@@ -1,0 +1,12 @@
+{%extends 'base.html.twig'%}
+{%block body%}
+    nbre de pfe par entreprise :
+    {%for entreprise in entreprise%}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{entreprise.nom}}
+                </h5>
+            </div>
+        </div>
+    {%endfor%}
+{%endblock%}
